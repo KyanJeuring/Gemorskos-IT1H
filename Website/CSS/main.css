@@ -1,0 +1,27 @@
+:root
+{
+    --mainColor: 255, 144, 0;
+}
+
+@font-face
+{
+    font-family: 'Ubuntu';
+    src: url(../Assets/font/Ubuntu-Regular.ttf);
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+.errorMessage
+{
+    color: rgb(255, 0, 0);
+}
