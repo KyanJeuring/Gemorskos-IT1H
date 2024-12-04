@@ -13,11 +13,11 @@ The Ubuntu Server has the following roles:
 - MySQL &#47; phpMyAdmin &#40;Databases&#41;
 
 ## Project members
-- Project Manager: Bence Mohr
-- Quality controller: Kyan Jeuring
-- Lead Developer: Peter Kapsiar
-- Team members:
-    - David Corodeanu
-    - Eliza Horváth
-    - Sanduni Thathsarani Pinpura Dewage
-    - Ugochukwu Ndiogazili
+- Project Manager: [Bence Mohr](https://github.com/thebencemohr)
+- Quality controller: [Kyan Jeuring](https://github.com/kyanjeuring)
+- Lead Developer: [Peter Kapsiar](https://github.com/pop9459)
+- Developers:
+    - [David Corodeanu](https://github.com/DavidCorodeanu)
+    - [Eliza Horváth](https://github.com/elizahorvath)
+    - [Sanduni Thathsarani Pinpura Dewage](https://github.com/Sanduni788)
+    - [Ugochukwu Ndiogazili](https://github.com/Ugochukwu-ndiogazili)
