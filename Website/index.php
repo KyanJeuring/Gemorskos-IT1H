@@ -5,9 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gemorskos News Agency</title>
         <link rel="stylesheet" href="./CSS/main.css" type="text/css">
-        <link rel="Icon" href="./Assets/favicon/favicon.png" type="image/x-icon">
+        <link rel="icon" href="./Assets/favicon/favicon.png" type="image/x-icon">
     </head>
     <body>
-        <p>Hello World!</p>
+        <main>
+            <?
+            if ($_SERVER["REQUEST_METHOD"] != "POST"):
+            ?>
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
+                <input type="submit" value="Login">
+            </form>
+            <?
+            else:
+                echo "Hello, World!";
+            endif;
+            ?>
+        </main>
     </body>
 </html>
