@@ -15,10 +15,42 @@
     margin: 0;
     padding: 0;
 }
+body, main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 body
 {
+    height: 100vh;
+    background-color: #000;
     font-family: 'Ubuntu', sans-serif;    
+}
+
+main
+{
+    background-color: rgb(var(--mainColor));
+    margin: auto auto;
+    border-radius: 5rem;
+    width: 50vw;
+    height: max-content;
+}
+
+.mainTitle, form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.3em;
+}
+
+form
+{
+    row-gap: 0.5rem;
 }
 
 .errorMessage

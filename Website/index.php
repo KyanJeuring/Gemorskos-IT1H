@@ -1,3 +1,6 @@
+<?
+    require_once("./config/dbconfig.php");
+?>
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -10,15 +13,26 @@
     <body>
         <main>
             <?
-            if ($_SERVER["REQUEST_METHOD"] != "POST"):
+                if ($_SERVER["REQUEST_METHOD"] != "POST"):
+                ?>
+                <div class="mainTitle">
+                    <h1>Log into Gemorskos News Agency</h1>
+                </div>
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" name="username">
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+                <?
+                else:
             ?>
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
-                <input type="submit" value="Login">
-            </form>
-            <?
-            else:
-                echo "Hello, World!";
-            endif;
+            <div class="mainTitle">
+                <h1>Welcome to Gemorskos News Agency</h1>
+            </div>
+            <?php
+                endif;
             ?>
         </main>
     </body>
