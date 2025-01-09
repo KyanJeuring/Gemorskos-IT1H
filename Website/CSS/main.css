@@ -1,6 +1,7 @@
 :root
 {
     --mainColor: 255, 144, 0;
+    --secondaryColor: 0, 0, 0;
 }
 
 @font-face
@@ -29,6 +30,11 @@ body
     font-family: 'Ubuntu', sans-serif;    
 }
 
+#welcomeText
+{
+    margin-block: 5rem;
+}
+
 main
 {
     background-color: rgb(var(--mainColor));
@@ -36,24 +42,83 @@ main
     border-radius: 5rem;
     width: 50vw;
     height: max-content;
+    padding: 1rem;
 }
 
-.mainTitle, form
+.mainTitle, .maincontent
 {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
     font-size: 1.3em;
 }
 
 form
 {
-    row-gap: 0.5rem;
+    display: flex;
+}
+
+form > div
+{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;    
+    margin-block: 0.5rem;
+}
+
+div > label
+{
+    font-weight: bold;
+    text-align: right;
+}
+
+input[type="text"], input[type="password"]
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(var(--secondaryColor));
+}
+
+a, input[type="submit"]
+{
+    width: max-content;
+    border: none;
+    text-decoration: none;
+    color: rgb(var(--mainColor));
+    background-color: rgb(var(--secondaryColor));
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+:is(a, input[type="submit"]):hover
+{
+    background-color: rgba(var(--secondaryColor), 0.8);
+}
+
+input[type="submit"]
+{
+    margin-top: 1rem;
+}
+
+a
+{
+    margin-top: 1rem;
 }
 
 .errorMessage
 {
+    display: flex;
+    justify-content: center;
     color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-align: center;
 }
